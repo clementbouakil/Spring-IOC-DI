@@ -12,7 +12,7 @@
     </bean>
 
     <!-- Bean of the book -->
-    <bean id="theWizard" class="fr.wildcodeschool.thewizardproject.models.Dumbledore">
+    <bean id="theWizard" class="fr.wildcodeschool.thewizardproject.models.Gandalf">
         <!-- Injection in the constructor : -->
         <constructor-arg ref="myOutfitWizard"/>
     </bean>
