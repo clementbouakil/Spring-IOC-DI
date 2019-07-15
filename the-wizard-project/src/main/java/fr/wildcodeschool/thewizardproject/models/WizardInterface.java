@@ -1,13 +1,9 @@
 package fr.wildcodeschool.thewizardproject.models;
 
-public class WizardInterface {
+public interface WizardInterface {
 
-    public void giveAdvice() {
-        
-    }
+    public String giveAdvice();
 
-    public void changeDress() {
-        
-    }
+    public String changeDress();
 
 }
