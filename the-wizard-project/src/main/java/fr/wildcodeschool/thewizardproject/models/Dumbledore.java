@@ -2,14 +2,24 @@ package fr.wildcodeschool.thewizardproject.models;
 
 public class Dumbledore implements WizardInterface {
 
+    private Outfit myOutfit;
+
     @Override
     public String giveAdvice() {
-        return null;
+        return "N’aie pas pitié des morts Harry, aie pitié des vivants et en particulier de tous ceux qui vivent sans amour.";
+    }
+
+    public Dumbledore(Outfit theOutfit) {
+        myOutfit = theOutfit;
     }
 
     @Override
     public String changeDress() {
-        return null;
+        return myOutfit.describeDress() + "white";
+    }
+
+    public void setOutfit(Outfit theOutfit) {
+        myOutfit = theOutfit;
     }
     
 }
